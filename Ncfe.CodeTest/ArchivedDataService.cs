@@ -1,6 +1,6 @@
 ﻿namespace Ncfe.CodeTest
 {
-    public class ArchivedDataService
+    public class ArchivedDataService: IArchivedDataService
     {
         public Learner GetArchivedLearner(int learnerId)
         {

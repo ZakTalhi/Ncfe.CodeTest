@@ -1,11 +1,12 @@
 ﻿namespace Ncfe.CodeTest
 {
-    public class FailoverLearnerDataAccess
+    public class FailoverLearnerDataAccess : IFailoverLearnerDataAccess
     {
-        public static LearnerResponse GetLearnerById(int id)
+        public LearnerResponse GetLearnerById(int learnerId)
         {
-            // retrieve learner from database
+            // Existing implementation
             return new LearnerResponse();
         }
     }
 }
+

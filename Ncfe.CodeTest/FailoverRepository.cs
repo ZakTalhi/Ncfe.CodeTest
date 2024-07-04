@@ -2,12 +2,12 @@
 
 namespace Ncfe.CodeTest
 {
-    public class FailoverRepository
-    {
-        public List<FailoverEntry> GetFailOverEntries()
+    public class FailoverRepository: IFailoverRepository
+    { 
+
+        IEnumerable<FailoverEntry> IFailoverRepository.GetFailOverEntries()
         {
-            // return all from fail entries from database
-            return new List<FailoverEntry>();
+            throw new System.NotImplementedException();
         }
     }
 }

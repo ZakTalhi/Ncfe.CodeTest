@@ -46,11 +46,28 @@
     <Compile Include="FailoverEntry.cs" />
     <Compile Include="FailoverLearnerDataAccess.cs" />
     <Compile Include="FailoverRepository.cs" />
+    <Compile Include="IArchivedDataService.cs" />
+    <Compile Include="IFailoverLearnerDataAccess.cs" />
+    <Compile Include="IFailoverRepository.cs" />
+    <Compile Include="ILearnerDataAccess.cs" />
     <Compile Include="Learner.cs" />
     <Compile Include="LearnerDataAccess.cs" />
     <Compile Include="LearnerResponse.cs" />
     <Compile Include="LearnerService.cs" />
+    <Compile Include="LearnerServiceTests.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection">
+      <Version>8.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Moq">
+      <Version>4.20.70</Version>
+    </PackageReference>
+    <PackageReference Include="xunit">
+      <Version>2.8.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
